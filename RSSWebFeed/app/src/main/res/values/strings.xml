@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">RSSWebFeed</string>
-    <string name="connection_error">Connection Error</string>
-    <string name="xml_error">XML Error</string>
-    <string name="page_title">title</string>
-    <string name="updated">updated</string>
-</resources>
