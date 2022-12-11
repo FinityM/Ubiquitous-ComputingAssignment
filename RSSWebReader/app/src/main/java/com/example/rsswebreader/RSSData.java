@@ -5,7 +5,7 @@ public class RSSData {
     String link;
     String image;
 
-    public RSSData(String title, String link) {
+    public RSSData(String title, String link, String image) {
         this.title = title;
         this.link = link;
     }

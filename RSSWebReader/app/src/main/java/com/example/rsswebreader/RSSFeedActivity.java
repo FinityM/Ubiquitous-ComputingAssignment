@@ -147,7 +147,7 @@ public class RSSFeedActivity extends AppCompatActivity {
 
             for(int i = 0; i < titles.size(); i++)
             {
-                arrayList.add(new RSSData(titles.get(i), links.get(i)));
+                arrayList.add(new RSSData(titles.get(i), links.get(i), null));
             }
 
 //            ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, titles);
