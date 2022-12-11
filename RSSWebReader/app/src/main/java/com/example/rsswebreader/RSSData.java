@@ -8,6 +8,7 @@ public class RSSData {
     public RSSData(String title, String link, String image) {
         this.title = title;
         this.link = link;
+        this.image = image;
     }
 
     public String getTitle() {
