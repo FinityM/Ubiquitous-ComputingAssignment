@@ -137,8 +137,15 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Exception e) {
             super.onPostExecute(e);
 
-            ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, titles);
+            ArrayList<RSSData> arrayList = new ArrayList<>();
 
+            for(int i = 0; i < titles.size(); i++)
+            {
+                arrayList.add(new RSSData(titles.get(i), links.get(i)));
+            }
+
+//            ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, titles);
+            CustomAdapter adapter = new CustomAdapter(MainActivity.this, arrayList);
             lvRss.setAdapter(adapter);
 
             progressDialog.dismiss();
