@@ -69,9 +69,9 @@ public class CustomAdapter implements ListAdapter {
             TextView title = convertView.findViewById(R.id.rssTitle);
             ImageView image = convertView.findViewById(R.id.list_image);
             title.setText(rssData.title);
-//            Picasso.get()
-//                    .load(rssData.image)
-//                    .into(image);
+            Picasso.get()
+                    .load(rssData.image)
+                    .into(image);
         }
         return convertView;
     }
