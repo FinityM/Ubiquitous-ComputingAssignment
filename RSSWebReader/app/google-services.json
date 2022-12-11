@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773706328567",
+    "project_id": "rssfeedapp-9e7bc",
+    "storage_bucket": "rssfeedapp-9e7bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773706328567:android:bd425e1a9ee227748866f2",
+        "android_client_info": {
+          "package_name": "com.example.rsswebreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773706328567-q5qvvjnu905mb1j2rrak2o5dvpl7hv31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDHgQF6y62b0-3ObuGhq5cvGV9lkZtvj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773706328567-q5qvvjnu905mb1j2rrak2o5dvpl7hv31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
