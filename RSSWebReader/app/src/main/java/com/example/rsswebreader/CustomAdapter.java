@@ -67,7 +67,7 @@ public class CustomAdapter implements ListAdapter {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
             convertView = layoutInflater.inflate(R.layout.list_row, null);
             TextView title = convertView.findViewById(R.id.rssTitle);
-            //ImageView image = convertView.findViewById(R.id.rssImage);
+            ImageView image = convertView.findViewById(R.id.list_image);
             title.setText(rssData.title);
 //            Picasso.get()
 //                    .load(rssData.image)
