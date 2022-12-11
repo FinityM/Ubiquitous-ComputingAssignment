@@ -37,6 +37,7 @@ public class RSSFeedActivity extends AppCompatActivity {
 
         titles = new ArrayList<>();
         links = new ArrayList<>();
+        imageLinks = new ArrayList<>();
 
         lvRss.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -112,14 +113,14 @@ public class RSSFeedActivity extends AppCompatActivity {
                                 links.add(xpp.nextText());
                             }
                         }
-//                        else if(xpp.getName().equalsIgnoreCase("enclosure"))
-//                        {
-//                            if(insideItem)
-//                            {
-//                                imageLinks.add(xpp.getAttributeValue(null, "url"));
-//
-//                            }
-//                        }
+                        else if(xpp.getName().equalsIgnoreCase("enclosure"))
+                        {
+                            if(insideItem)
+                            {
+                                imageLinks.add(xpp.getAttributeValue(null, "url"));
+
+                            }
+                        }
                     }
                     else if(eventType == XmlPullParser.END_TAG && xpp.getName().equalsIgnoreCase("item"))
                     {
@@ -147,7 +148,7 @@ public class RSSFeedActivity extends AppCompatActivity {
 
             for(int i = 0; i < titles.size(); i++)
             {
-                arrayList.add(new RSSData(titles.get(i), links.get(i), null));
+                arrayList.add(new RSSData(titles.get(i), links.get(i), imageLinks.get(i)));
             }
 
 //            ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, titles);
